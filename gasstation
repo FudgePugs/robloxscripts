@@ -1,0 +1,3221 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainGUI = Instance.new("Frame")
+local CloseMAINgui = Instance.new("TextButton")
+local RestockSix = Instance.new("TextButton")
+local Tomato = Instance.new("TextButton")
+local CannedSoda = Instance.new("TextButton")
+local RestockOne = Instance.new("TextButton")
+local RestockTwo = Instance.new("TextButton")
+local RestockThree = Instance.new("TextButton")
+local RestockFour = Instance.new("TextButton")
+local RestockFive = Instance.new("TextButton")
+local BubbleGum = Instance.new("TextButton")
+local CandyBar = Instance.new("TextButton")
+local GenericCookies = Instance.new("TextButton")
+local Chips = Instance.new("TextButton")
+local Potato = Instance.new("TextButton")
+local Carrot = Instance.new("TextButton")
+local Cucumber = Instance.new("TextButton")
+local Water = Instance.new("TextButton")
+local Milk = Instance.new("TextButton")
+local GenericSoda = Instance.new("TextButton")
+local BreadBun = Instance.new("TextButton")
+local Hotdog = Instance.new("TextButton")
+local Cheese = Instance.new("TextButton")
+local WholeBread = Instance.new("TextButton")
+local Hamburger = Instance.new("TextButton")
+local InstantNoodles = Instance.new("TextButton")
+local HomemadeFishfingers = Instance.new("TextButton")
+local FrozenSausages = Instance.new("TextButton")
+local FrozenVeggies = Instance.new("TextButton")
+local IceCream = Instance.new("TextButton")
+local BrakeFluid = Instance.new("TextButton")
+local MotorOil = Instance.new("TextButton")
+local WashingPowder = Instance.new("TextButton")
+local Lubricant = Instance.new("TextButton")
+local RestockAllItems = Instance.new("TextButton")
+local InstantMeal = Instance.new("TextButton")
+local AllAroundCleaner = Instance.new("TextButton")
+local WindscreenWasherFluid = Instance.new("TextButton")
+local Open = Instance.new("Frame")
+local OpenMain = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainGUI.Name = "MainGUI"
+MainGUI.Parent = ScreenGui
+MainGUI.Active = true
+MainGUI.BackgroundColor3 = Color3.fromRGB(14, 21, 88)
+MainGUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGUI.Position = UDim2.new(0.192227021, 0, 0.24050121, 0)
+MainGUI.Size = UDim2.new(0, 435, 0, 317)
+MainGUI.Draggable = true
+Open.Draggable = true
+
+CloseMAINgui.Name = "CloseMAINgui"
+CloseMAINgui.Parent = MainGUI
+CloseMAINgui.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+CloseMAINgui.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CloseMAINgui.Position = UDim2.new(1.03908038, 0, -0.000113889575, 0)
+CloseMAINgui.Size = UDim2.new(0, 40, 0, 20)
+CloseMAINgui.Font = Enum.Font.Cartoon
+CloseMAINgui.Text = "close"
+CloseMAINgui.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseMAINgui.TextSize = 14.000
+CloseMAINgui.MouseButton1Down:connect(function()
+	MainGUI.Visible = false
+end)
+
+RestockSix.Name = "RestockSix"
+RestockSix.Parent = MainGUI
+RestockSix.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+RestockSix.BorderColor3 = Color3.fromRGB(255, 255, 255)
+RestockSix.Position = UDim2.new(0.725000024, 0, 0.0410000011, 0)
+RestockSix.Size = UDim2.new(0, 50, 0, 50)
+RestockSix.Font = Enum.Font.Cartoon
+RestockSix.Text = "restock car parts"
+RestockSix.TextColor3 = Color3.fromRGB(255, 255, 255)
+RestockSix.TextScaled = true
+RestockSix.TextSize = 14.000
+RestockSix.TextWrapped = true
+RestockSix.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-29.5, 2.9974472522735596, -25.100000381469727) * CFrame.Angles(-0, 1.7484555314695172e-07, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-28.899999618530273, 2.9974472522735596, -25.100000381469727) * CFrame.Angles(-0, 1.7484555314695172e-07, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-28.299999237060547, 2.9974472522735596, -25.100000381469727) * CFrame.Angles(-0, 1.7484555314695172e-07, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-29.100000381469727, 5.197447299957275, -25.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-29.100000381469727, 5.197447299957275, -25) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-29.100000381469727, 5.197447299957275, -24.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-29.100000381469727, 5.197447299957275, -24) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-29.5, 2.9974472522735596, -23.600000381469727) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-28.899999618530273, 2.9974472522735596, -23.600000381469727) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-28.299999237060547, 2.9974472522735596, -23.600000381469727) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-29.343652725219727, 5.197447299957275, -12.845213890075684) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-28.754423141479492, 5.197447299957275, -12.845213890075684) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-29.46150016784668, 5.197447299957275, -13.434443473815918) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-28.872268676757812, 5.197447299957275, -13.434443473815918) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-28.899999618530273, 5.197447299957275, -12.800000190734863) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-28.799999237060547, 5.197447299957275, -13.300000190734863) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-28.799999237060547, 5.197447299957275, -13.800000190734863) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-28.799999237060547, 5.197447299957275, -14.300000190734863) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-28.799999237060547, 5.197447299957275, -14.800000190734863) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+Tomato.Name = "Tomato"
+Tomato.Parent = MainGUI
+Tomato.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+Tomato.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Tomato.Position = UDim2.new(0.591000021, 0, 0.228, 0)
+Tomato.Size = UDim2.new(0, 50, 0, 50)
+Tomato.Font = Enum.Font.Cartoon
+Tomato.Text = "buy tomato's"
+Tomato.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tomato.TextScaled = true
+Tomato.TextSize = 14.000
+Tomato.TextWrapped = true
+Tomato.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Fresh Stock",
+		[4] = "Tomato",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+CannedSoda.Name = "CannedSoda"
+CannedSoda.Parent = MainGUI
+CannedSoda.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+CannedSoda.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CannedSoda.Position = UDim2.new(0.31099999, 0, 0.414999992, 0)
+CannedSoda.Size = UDim2.new(0, 50, 0, 49)
+CannedSoda.Font = Enum.Font.Cartoon
+CannedSoda.Text = "buy canned soda"
+CannedSoda.TextColor3 = Color3.fromRGB(255, 255, 255)
+CannedSoda.TextScaled = true
+CannedSoda.TextSize = 14.000
+CannedSoda.TextWrapped = true
+CannedSoda.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Drinks / Liquid",
+		[4] = "Canned Soda",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+RestockOne.Name = "RestockOne"
+RestockOne.Parent = MainGUI
+RestockOne.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+RestockOne.BorderColor3 = Color3.fromRGB(255, 255, 255)
+RestockOne.Position = UDim2.new(0.0379885063, 0, 0.0411545746, 0)
+RestockOne.Size = UDim2.new(0, 50, 0, 50)
+RestockOne.Font = Enum.Font.Cartoon
+RestockOne.Text = "restock fridge"
+RestockOne.TextColor3 = Color3.fromRGB(255, 255, 255)
+RestockOne.TextScaled = true
+RestockOne.TextSize = 14.000
+RestockOne.TextWrapped = true
+RestockOne.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Water",
+		[3] = CFrame.new(-28.447999954223633, 0.532341718673706, -2.687999963760376) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Water",
+		[3] = CFrame.new(-27.775999069213867, 0.532341718673706, -2.687999963760376) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Water",
+		[3] = CFrame.new(-29.119998931884766, 0.532341718673706, -3.247999906539917) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Water",
+		[3] = CFrame.new(-29.119998931884766, 0.532341718673706, -3.247999906539917) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Canned Soda",
+		[3] = CFrame.new(-28.600000381469727, 2.5323410034179688, -2.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Canned Soda",
+		[3] = CFrame.new(-28, 2.5323410034179688, -2.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Canned Soda",
+		[3] = CFrame.new(-29.100000381469727, 2.5323410034179688, -3) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Canned Soda",
+		[3] = CFrame.new(-28.5, 2.5323410034179688, -3) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Soda",
+		[3] = CFrame.new(-29.119998931884766, 2.5323410034179688, -1.903999924659729) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Soda",
+		[3] = CFrame.new(-28.559999465942383, 2.5323410034179688, -1.903999924659729) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Soda",
+		[3] = CFrame.new(-28, 2.5323410034179688, -1.903999924659729) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Soda",
+		[3] = CFrame.new(-29.119998931884766, 2.5323410034179688, -2.4639999866485596) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Milk",
+		[3] = CFrame.new(-29.040000915527344, 0.532341718673706, -1.9800000190734863) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Milk",
+		[3] = CFrame.new(-28.380001068115234, 0.532341718673706, -1.9800000190734863) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Milk",
+		[3] = CFrame.new(-27.720001220703125, 0.532341718673706, -1.9800000190734863) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Milk",
+		[3] = CFrame.new(-29.040000915527344, 0.532341718673706, -2.640000104904175) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cheese",
+		[3] = CFrame.new(-29.040000915527344, 4.63234281539917, -2.111999988555908) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cheese",
+		[3] = CFrame.new(-28.380001068115234, 4.63234281539917, -2.111999988555908) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cheese",
+		[3] = CFrame.new(-29.040000915527344, 4.63234281539917, -2.9040000438690186) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cheese",
+		[3] = CFrame.new(-28.380001068115234, 4.63234281539917, -2.9040000438690186) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+RestockTwo.Name = "RestockTwo"
+RestockTwo.Parent = MainGUI
+RestockTwo.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+RestockTwo.BorderColor3 = Color3.fromRGB(255, 255, 255)
+RestockTwo.Position = UDim2.new(0.172988504, 0, 0.0411545746, 0)
+RestockTwo.Size = UDim2.new(0, 50, 0, 50)
+RestockTwo.Font = Enum.Font.Cartoon
+RestockTwo.Text = "restock freezer"
+RestockTwo.TextColor3 = Color3.fromRGB(255, 255, 255)
+RestockTwo.TextScaled = true
+RestockTwo.TextSize = 14.000
+RestockTwo.TextWrapped = true
+RestockTwo.MouseButton1Click:Connect(function()
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Frozen Sausages",
+    [3] = CFrame.new(-17.899999618530273, 1.6000014543533325, 3.4000000953674316) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Frozen Sausages",
+    [3] = CFrame.new(-17.899999618530273, 1.6000014543533325, 2.700000047683716) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Homemade Fishfingers",
+    [3] = CFrame.new(-17.100000381469727, 1.6000014543533325, 3) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Ice Cream",
+    [3] = CFrame.new(-16.5, 1.600001573562622, 3.0999999046325684) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Frozen Veggies",
+    [3] = CFrame.new(-15.100000381469727, 1.600001573562622, 3.299999952316284) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Frozen Veggies",
+    [3] = CFrame.new(-15.100000381469727, 1.600001573562622, 2.5) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Ice Cream",
+    [3] = CFrame.new(-16.200000762939453, 1.600001573562622, 3.0999999046325684) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Homemade Fishfingers",
+    [3] = CFrame.new(-17.100000381469727, 1.8417786359786987, 3) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Homemade Fishfingers",
+    [3] = CFrame.new(-17.100000381469727, 2.08355712890625, 3) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+end)
+
+RestockThree.Name = "RestockThree"
+RestockThree.Parent = MainGUI
+RestockThree.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+RestockThree.BorderColor3 = Color3.fromRGB(255, 255, 255)
+RestockThree.Position = UDim2.new(0.310988516, 0, 0.0411545746, 0)
+RestockThree.Size = UDim2.new(0, 50, 0, 50)
+RestockThree.Font = Enum.Font.Cartoon
+RestockThree.Text = "restock shelfs"
+RestockThree.TextColor3 = Color3.fromRGB(255, 255, 255)
+RestockThree.TextScaled = true
+RestockThree.TextSize = 14.000
+RestockThree.TextWrapped = true
+RestockThree.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-18.020000457763672, 0.7974473237991333, -27.77199935913086) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-18.020000457763672, 0.7974473237991333, -26.711999893188477) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-19.079999923706055, 0.7974473237991333, -27.77199935913086) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-19.079999923706055, 0.7974473237991333, -26.711999893188477) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-18.100000381469727, 2.9974472522735596, -27.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-18.100000381469727, 2.9405131340026855, -26.700000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-24.920000076293945, 0.7974473237991333, -28.139999389648438) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-24.920000076293945, 0.7974473237991333, -27.93000030517578) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-24.920000076293945, 0.7974473237991333, -27.719999313354492) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-24.920000076293945, 0.7974473237991333, -27.510000228881836) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-23.055988311767578, 0.7974473237991333, -27.82619285583496) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-24.049779891967773, 0.7974473237991333, -27.82619285583496) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-23.055988311767578, 0.7974473237991333, -26.832399368286133) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-24.049779891967773, 0.7974473237991333, -26.832399368286133) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-21.64706802368164, 0.7974473237991333, -27.80445671081543) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-21.64706802368164, 0.7974473237991333, -27.323410034179688) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-21.64706802368164, 0.7974473237991333, -26.842363357543945) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-21.64706802368164, 0.7974473237991333, -26.361318588256836) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-20.07547378540039, 0.7974473237991333, -28.014062881469727) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-20.07547378540039, 0.7974473237991333, -27.632400512695312) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-20.07547378540039, 0.7974473237991333, -27.250736236572266) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-20.07547378540039, 0.7974473237991333, -26.86907386779785) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-18.700000762939453, 5.197447776794434, -27.600000381469727) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-21, 5.197447776794434, -27.700000762939453) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-23.200000762939453, 5.197447776794434, -27.700000762939453) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-25.399999618530273, 5.197447776794434, -27.700000762939453) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Chips",
+		[3] = CFrame.new(-26.3843994140625, 2.9974474906921387, -27.193649291992188) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Chips",
+		[3] = CFrame.new(-26.399999618530273, 2.9974472522735596, -28.100000381469727) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Chips",
+		[3] = CFrame.new(-26.5, 2.9847049713134766, -26.700000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Chips",
+		[3] = CFrame.new(-25.100000381469727, 2.9974472522735596, -28) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+RestockFour.Name = "RestockFour"
+RestockFour.Parent = MainGUI
+RestockFour.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+RestockFour.BorderColor3 = Color3.fromRGB(255, 255, 255)
+RestockFour.Position = UDim2.new(0.44798854, 0, 0.0411545746, 0)
+RestockFour.Size = UDim2.new(0, 50, 0, 50)
+RestockFour.Font = Enum.Font.Cartoon
+RestockFour.Text = "restock vege tables"
+RestockFour.TextColor3 = Color3.fromRGB(255, 255, 255)
+RestockFour.TextScaled = true
+RestockFour.TextSize = 14.000
+RestockFour.TextWrapped = true
+RestockFour.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Carrots",
+		[3] = CFrame.new(-12.811657905578613, 2.4499998092651367, -5.852238655090332) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Carrots",
+		[3] = CFrame.new(-12.811657905578613, 2.4499998092651367, -6.6430816650390625) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Carrots",
+		[3] = CFrame.new(-12.811657905578613, 2.4499998092651367, -7.433924674987793) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Carrots",
+		[3] = CFrame.new(-12.811657905578613, 2.4499998092651367, -8.224767684936523) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Potato",
+		[3] = CFrame.new(-12.100000381469727, 2.4499998092651367, -5.800000190734863) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Potato",
+		[3] = CFrame.new(-11.699999809265137, 2.4499998092651367, -5.800000190734863) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Potato",
+		[3] = CFrame.new(-11.300000190734863, 2.4499998092651367, -5.800000190734863) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Potato",
+		[3] = CFrame.new(-12.100000381469727, 2.4499998092651367, -6.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Tomato",
+		[3] = CFrame.new(-13.199999809265137, 2.4499998092651367, -8.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Tomato",
+		[3] = CFrame.new(-12.699999809265137, 2.4499998092651367, -8.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Tomato",
+		[3] = CFrame.new(-12.199999809265137, 2.4499998092651367, -8.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Tomato",
+		[3] = CFrame.new(-11.699999809265137, 2.4499998092651367, -8.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cucumber",
+		[3] = CFrame.new(-11.699999809265137, 2.4499998092651367, -8.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cucumber",
+		[3] = CFrame.new(-11.699999809265137, 2.4499998092651367, -8.100000381469727) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cucumber",
+		[3] = CFrame.new(-11.699999809265137, 2.4499998092651367, -7.699999809265137) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cucumber",
+		[3] = CFrame.new(-11.699999809265137, 2.4499998092651367, -7.300000190734863) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+RestockFive.Name = "RestockFive"
+RestockFive.Parent = MainGUI
+RestockFive.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+RestockFive.BorderColor3 = Color3.fromRGB(255, 255, 255)
+RestockFive.Position = UDim2.new(0.591000021, 0, 0.0410000011, 0)
+RestockFive.Size = UDim2.new(0, 50, 0, 50)
+RestockFive.Font = Enum.Font.Cartoon
+RestockFive.Text = "restock fast foods"
+RestockFive.TextColor3 = Color3.fromRGB(255, 255, 255)
+RestockFive.TextScaled = true
+RestockFive.TextSize = 14.000
+RestockFive.TextWrapped = true
+RestockFive.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Meal",
+		[3] = CFrame.new(-13.199999809265137, 3.5000014305114746, -27.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Meal",
+		[3] = CFrame.new(-11.399999618530273, 3.5000014305114746, -27.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hamburger",
+		[3] = CFrame.new(-11.826000213623047, 1.9000043869018555, -27.86400032043457) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hamburger",
+		[3] = CFrame.new(-11.826000213623047, 1.9000043869018555, -27.053998947143555) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hamburger",
+		[3] = CFrame.new(-11.015999794006348, 1.9000043869018555, -27.70199966430664) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hamburger",
+		[3] = CFrame.new(-11.015999794006348, 1.9000043869018555, -26.892000198364258) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hotdog",
+		[3] = CFrame.new(-13.549687385559082, 1.9000043869018555, -28.42152416700925) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hotdog",
+		[3] = CFrame.new(-13.549687385559082, 1.9000043869018555, -27.402727127075195) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hotdog",
+		[3] = CFrame.new(-13.549687385559082, 1.9000043869018555, -26.897140502929688) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+BubbleGum.Name = "BubbleGum"
+BubbleGum.Parent = MainGUI
+BubbleGum.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+BubbleGum.BorderColor3 = Color3.fromRGB(255, 255, 255)
+BubbleGum.Position = UDim2.new(0.0379999988, 0, 0.228, 0)
+BubbleGum.Size = UDim2.new(0, 50, 0, 50)
+BubbleGum.Font = Enum.Font.Cartoon
+BubbleGum.Text = "buy bubble gum"
+BubbleGum.TextColor3 = Color3.fromRGB(255, 255, 255)
+BubbleGum.TextScaled = true
+BubbleGum.TextSize = 14.000
+BubbleGum.TextWrapped = true
+BubbleGum.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Snacks",
+		[4] = "Bubble Gum",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+CandyBar.Name = "CandyBar"
+CandyBar.Parent = MainGUI
+CandyBar.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+CandyBar.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CandyBar.Position = UDim2.new(0.172999993, 0, 0.228, 0)
+CandyBar.Size = UDim2.new(0, 50, 0, 50)
+CandyBar.Font = Enum.Font.Cartoon
+CandyBar.Text = "buy candy bars"
+CandyBar.TextColor3 = Color3.fromRGB(255, 255, 255)
+CandyBar.TextScaled = true
+CandyBar.TextSize = 14.000
+CandyBar.TextWrapped = true
+CandyBar.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Snacks",
+		[4] = "Candy Bar",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+GenericCookies.Name = "GenericCookies"
+GenericCookies.Parent = MainGUI
+GenericCookies.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+GenericCookies.BorderColor3 = Color3.fromRGB(255, 255, 255)
+GenericCookies.Position = UDim2.new(0.310617536, 0, 0.227718681, 0)
+GenericCookies.Size = UDim2.new(0, 50, 0, 50)
+GenericCookies.Font = Enum.Font.Cartoon
+GenericCookies.Text = "buy generic cookies"
+GenericCookies.TextColor3 = Color3.fromRGB(255, 255, 255)
+GenericCookies.TextScaled = true
+GenericCookies.TextSize = 14.000
+GenericCookies.TextWrapped = true
+GenericCookies.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Snacks",
+		[4] = "Generic Cookies",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+Chips.Name = "Chips"
+Chips.Parent = MainGUI
+Chips.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+Chips.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Chips.Position = UDim2.new(0.448000014, 0, 0.228, 0)
+Chips.Size = UDim2.new(0, 50, 0, 50)
+Chips.Font = Enum.Font.Cartoon
+Chips.Text = "buy chips"
+Chips.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chips.TextScaled = true
+Chips.TextSize = 14.000
+Chips.TextWrapped = true
+Chips.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Snacks",
+		[4] = "Chips",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+Potato.Name = "Potato"
+Potato.Parent = MainGUI
+Potato.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+Potato.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Potato.Position = UDim2.new(0.725000024, 0, 0.228, 0)
+Potato.Size = UDim2.new(0, 50, 0, 50)
+Potato.Font = Enum.Font.Cartoon
+Potato.Text = "buy potato's"
+Potato.TextColor3 = Color3.fromRGB(255, 255, 255)
+Potato.TextScaled = true
+Potato.TextSize = 14.000
+Potato.TextWrapped = true
+Potato.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Fresh Stock",
+		[4] = "Potato",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+Carrot.Name = "Carrot"
+Carrot.Parent = MainGUI
+Carrot.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+Carrot.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Carrot.Position = UDim2.new(0.85799998, 0, 0.228, 0)
+Carrot.Size = UDim2.new(0, 50, 0, 50)
+Carrot.Font = Enum.Font.Cartoon
+Carrot.Text = "buy carrots"
+Carrot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Carrot.TextScaled = true
+Carrot.TextSize = 14.000
+Carrot.TextWrapped = true
+Carrot.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Fresh Stock",
+		[4] = "Carrots",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+Cucumber.Name = "Cucumber"
+Cucumber.Parent = MainGUI
+Cucumber.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+Cucumber.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Cucumber.Position = UDim2.new(0.0379999988, 0, 0.414999992, 0)
+Cucumber.Size = UDim2.new(0, 50, 0, 50)
+Cucumber.Font = Enum.Font.Cartoon
+Cucumber.Text = "buy cucum ber"
+Cucumber.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cucumber.TextScaled = true
+Cucumber.TextSize = 14.000
+Cucumber.TextWrapped = true
+Cucumber.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Fresh Stock",
+		[4] = "Cucumber",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+Water.Name = "Water"
+Water.Parent = MainGUI
+Water.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+Water.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Water.Position = UDim2.new(0.172999993, 0, 0.414999992, 0)
+Water.Size = UDim2.new(0, 50, 0, 50)
+Water.Font = Enum.Font.Cartoon
+Water.Text = "buy water"
+Water.TextColor3 = Color3.fromRGB(255, 255, 255)
+Water.TextScaled = true
+Water.TextSize = 14.000
+Water.TextWrapped = true
+Water.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Drinks / Liquid",
+		[4] = "Water",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+Milk.Name = "Milk"
+Milk.Parent = MainGUI
+Milk.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+Milk.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Milk.Position = UDim2.new(0.448000014, 0, 0.414999992, 0)
+Milk.Size = UDim2.new(0, 50, 0, 50)
+Milk.Font = Enum.Font.Cartoon
+Milk.Text = "buy milk"
+Milk.TextColor3 = Color3.fromRGB(255, 255, 255)
+Milk.TextScaled = true
+Milk.TextSize = 14.000
+Milk.TextWrapped = true
+Milk.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Drinks / Liquid",
+		[4] = "Milk",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+GenericSoda.Name = "GenericSoda"
+GenericSoda.Parent = MainGUI
+GenericSoda.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+GenericSoda.BorderColor3 = Color3.fromRGB(255, 255, 255)
+GenericSoda.Position = UDim2.new(0.591000021, 0, 0.414999992, 0)
+GenericSoda.Size = UDim2.new(0, 50, 0, 50)
+GenericSoda.Font = Enum.Font.Cartoon
+GenericSoda.Text = "buy generic soda"
+GenericSoda.TextColor3 = Color3.fromRGB(255, 255, 255)
+GenericSoda.TextScaled = true
+GenericSoda.TextSize = 14.000
+GenericSoda.TextWrapped = true
+GenericSoda.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Drinks / Liquid",
+		[4] = "Generic Soda",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+BreadBun.Name = "BreadBun"
+BreadBun.Parent = MainGUI
+BreadBun.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+BreadBun.BorderColor3 = Color3.fromRGB(255, 255, 255)
+BreadBun.Position = UDim2.new(0.725000024, 0, 0.414999992, 0)
+BreadBun.Size = UDim2.new(0, 50, 0, 50)
+BreadBun.Font = Enum.Font.Cartoon
+BreadBun.Text = "buy bread buns"
+BreadBun.TextColor3 = Color3.fromRGB(255, 255, 255)
+BreadBun.TextScaled = true
+BreadBun.TextSize = 14.000
+BreadBun.TextWrapped = true
+BreadBun.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Food",
+		[4] = "Bread Bun",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+Hotdog.Name = "Hotdog"
+Hotdog.Parent = MainGUI
+Hotdog.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+Hotdog.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Hotdog.Position = UDim2.new(0.85799998, 0, 0.414999992, 0)
+Hotdog.Size = UDim2.new(0, 50, 0, 50)
+Hotdog.Font = Enum.Font.Cartoon
+Hotdog.Text = "buy Hotdogs"
+Hotdog.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hotdog.TextScaled = true
+Hotdog.TextSize = 14.000
+Hotdog.TextWrapped = true
+Hotdog.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Food",
+		[4] = "Hotdog",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+Cheese.Name = "Cheese"
+Cheese.Parent = MainGUI
+Cheese.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+Cheese.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Cheese.Position = UDim2.new(0.172999993, 0, 0.606000006, 0)
+Cheese.Size = UDim2.new(0, 50, 0, 50)
+Cheese.Font = Enum.Font.Cartoon
+Cheese.Text = "buy cheese"
+Cheese.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cheese.TextScaled = true
+Cheese.TextSize = 14.000
+Cheese.TextWrapped = true
+Cheese.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Food",
+		[4] = "Cheese",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+WholeBread.Name = "WholeBread"
+WholeBread.Parent = MainGUI
+WholeBread.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+WholeBread.BorderColor3 = Color3.fromRGB(255, 255, 255)
+WholeBread.Position = UDim2.new(0.31099999, 0, 0.606000006, 0)
+WholeBread.Size = UDim2.new(0, 50, 0, 50)
+WholeBread.Font = Enum.Font.Cartoon
+WholeBread.Text = "buy whole bread"
+WholeBread.TextColor3 = Color3.fromRGB(255, 255, 255)
+WholeBread.TextScaled = true
+WholeBread.TextSize = 14.000
+WholeBread.TextWrapped = true
+WholeBread.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Food",
+		[4] = "Whole Bread",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+Hamburger.Name = "Hamburger"
+Hamburger.Parent = MainGUI
+Hamburger.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+Hamburger.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Hamburger.Position = UDim2.new(0.448000014, 0, 0.606000006, 0)
+Hamburger.Size = UDim2.new(0, 50, 0, 50)
+Hamburger.Font = Enum.Font.Cartoon
+Hamburger.Text = "buy ham burger"
+Hamburger.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hamburger.TextScaled = true
+Hamburger.TextSize = 14.000
+Hamburger.TextWrapped = true
+Hamburger.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Food",
+		[4] = "Hamburger",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+InstantNoodles.Name = "InstantNoodles"
+InstantNoodles.Parent = MainGUI
+InstantNoodles.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+InstantNoodles.BorderColor3 = Color3.fromRGB(255, 255, 255)
+InstantNoodles.Position = UDim2.new(0.0379999988, 0, 0.606000006, 0)
+InstantNoodles.Size = UDim2.new(0, 50, 0, 50)
+InstantNoodles.Font = Enum.Font.Cartoon
+InstantNoodles.Text = "buy instant noodles"
+InstantNoodles.TextColor3 = Color3.fromRGB(255, 255, 255)
+InstantNoodles.TextScaled = true
+InstantNoodles.TextSize = 14.000
+InstantNoodles.TextWrapped = true
+InstantNoodles.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Food",
+		[4] = "Instant Noodles",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+HomemadeFishfingers.Name = "HomemadeFishfingers"
+HomemadeFishfingers.Parent = MainGUI
+HomemadeFishfingers.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+HomemadeFishfingers.BorderColor3 = Color3.fromRGB(255, 255, 255)
+HomemadeFishfingers.Position = UDim2.new(0.725000024, 0, 0.606000006, 0)
+HomemadeFishfingers.Size = UDim2.new(0, 50, 0, 50)
+HomemadeFishfingers.Font = Enum.Font.Cartoon
+HomemadeFishfingers.Text = "buy homemade fishfingers"
+HomemadeFishfingers.TextColor3 = Color3.fromRGB(255, 255, 255)
+HomemadeFishfingers.TextScaled = true
+HomemadeFishfingers.TextSize = 14.000
+HomemadeFishfingers.TextWrapped = true
+HomemadeFishfingers.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Frozen Food",
+		[4] = "Homemade Fishfingers",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+FrozenSausages.Name = "FrozenSausages"
+FrozenSausages.Parent = MainGUI
+FrozenSausages.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+FrozenSausages.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FrozenSausages.Position = UDim2.new(0.85799998, 0, 0.606000006, 0)
+FrozenSausages.Size = UDim2.new(0, 50, 0, 50)
+FrozenSausages.Font = Enum.Font.Cartoon
+FrozenSausages.Text = "buy frozen sausages"
+FrozenSausages.TextColor3 = Color3.fromRGB(255, 255, 255)
+FrozenSausages.TextScaled = true
+FrozenSausages.TextSize = 14.000
+FrozenSausages.TextWrapped = true
+FrozenSausages.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Frozen Food",
+		[4] = "Frozen Sausages",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+FrozenVeggies.Name = "FrozenVeggies"
+FrozenVeggies.Parent = MainGUI
+FrozenVeggies.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+FrozenVeggies.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FrozenVeggies.Position = UDim2.new(0.0379999988, 0, 0.795000017, 0)
+FrozenVeggies.Size = UDim2.new(0, 50, 0, 50)
+FrozenVeggies.Font = Enum.Font.Cartoon
+FrozenVeggies.Text = "buy frozen veggies"
+FrozenVeggies.TextColor3 = Color3.fromRGB(255, 255, 255)
+FrozenVeggies.TextScaled = true
+FrozenVeggies.TextSize = 14.000
+FrozenVeggies.TextWrapped = true
+FrozenVeggies.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Frozen Food",
+		[4] = "Frozen Veggies",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+IceCream.Name = "IceCream"
+IceCream.Parent = MainGUI
+IceCream.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+IceCream.BorderColor3 = Color3.fromRGB(255, 255, 255)
+IceCream.Position = UDim2.new(0.172999993, 0, 0.795000017, 0)
+IceCream.Size = UDim2.new(0, 50, 0, 50)
+IceCream.Font = Enum.Font.Cartoon
+IceCream.Text = "buy icecream"
+IceCream.TextColor3 = Color3.fromRGB(255, 255, 255)
+IceCream.TextScaled = true
+IceCream.TextSize = 14.000
+IceCream.TextWrapped = true
+IceCream.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Frozen Food",
+		[4] = "Ice Cream",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+BrakeFluid.Name = "BrakeFluid"
+BrakeFluid.Parent = MainGUI
+BrakeFluid.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+BrakeFluid.BorderColor3 = Color3.fromRGB(255, 255, 255)
+BrakeFluid.Position = UDim2.new(0.725000024, 0, 0.792999983, 0)
+BrakeFluid.Size = UDim2.new(0, 50, 0, 50)
+BrakeFluid.Font = Enum.Font.Cartoon
+BrakeFluid.Text = "buy brake fluid"
+BrakeFluid.TextColor3 = Color3.fromRGB(255, 255, 255)
+BrakeFluid.TextScaled = true
+BrakeFluid.TextSize = 14.000
+BrakeFluid.TextWrapped = true
+BrakeFluid.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Survival Supplies",
+		[3] = "Low Quantity Sales",
+		[4] = "Brake Fluid",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+MotorOil.Name = "MotorOil"
+MotorOil.Parent = MainGUI
+MotorOil.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+MotorOil.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MotorOil.Position = UDim2.new(0.85799998, 0, 0.792999983, 0)
+MotorOil.Size = UDim2.new(0, 50, 0, 25)
+MotorOil.Font = Enum.Font.Cartoon
+MotorOil.Text = "buy motor oil"
+MotorOil.TextColor3 = Color3.fromRGB(255, 255, 255)
+MotorOil.TextScaled = true
+MotorOil.TextSize = 14.000
+MotorOil.TextWrapped = true
+MotorOil.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Survival Supplies",
+		[3] = "Low Quantity Sales",
+		[4] = "Motor Oil",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+WashingPowder.Name = "WashingPowder"
+WashingPowder.Parent = MainGUI
+WashingPowder.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+WashingPowder.BorderColor3 = Color3.fromRGB(255, 255, 255)
+WashingPowder.Position = UDim2.new(0.448000014, 0, 0.792999983, 0)
+WashingPowder.Size = UDim2.new(0, 50, 0, 50)
+WashingPowder.Font = Enum.Font.Cartoon
+WashingPowder.Text = "buy washing powder"
+WashingPowder.TextColor3 = Color3.fromRGB(255, 255, 255)
+WashingPowder.TextScaled = true
+WashingPowder.TextSize = 14.000
+WashingPowder.TextWrapped = true
+WashingPowder.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Survival Supplies",
+		[3] = "Household",
+		[4] = "Washing Powder",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+Lubricant.Name = "Lubricant"
+Lubricant.Parent = MainGUI
+Lubricant.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+Lubricant.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Lubricant.Position = UDim2.new(0.591000021, 0, 0.792999983, 0)
+Lubricant.Size = UDim2.new(0, 50, 0, 50)
+Lubricant.Font = Enum.Font.Cartoon
+Lubricant.Text = "buy lubricant"
+Lubricant.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lubricant.TextScaled = true
+Lubricant.TextSize = 14.000
+Lubricant.TextWrapped = true
+Lubricant.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Survival Supplies",
+		[3] = "Household",
+		[4] = "Lubricant",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+RestockAllItems.Name = "RestockAllItems"
+RestockAllItems.Parent = MainGUI
+RestockAllItems.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+RestockAllItems.BorderColor3 = Color3.fromRGB(255, 255, 255)
+RestockAllItems.Position = UDim2.new(0.85799998, 0, 0.0410000011, 0)
+RestockAllItems.Size = UDim2.new(0, 50, 0, 49)
+RestockAllItems.Font = Enum.Font.Cartoon
+RestockAllItems.Text = "Restock every thing"
+RestockAllItems.TextColor3 = Color3.fromRGB(255, 255, 255)
+RestockAllItems.TextScaled = true
+RestockAllItems.TextSize = 14.000
+RestockAllItems.TextWrapped = true
+RestockAllItems.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-17.899999618530273, 0.7974473237991333, -28.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-17.899999618530273, 0.7974473237991333, -28.080711364746094) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-17.899999618530273, 0.7974473237991333, -27.961421966552734) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-17.899999618530273, 0.7974473237991333, -27.842134475708008) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-17.899999618530273, 0.7974473237991333, -27.72284507751465) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-17.899999618530273, 0.7974473237991333, -27.600000381469727) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-17.899999618530273, 0.7974473237991333, -27.399999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-17.899999618530273, 0.7974473237991333, -27.280710220336914) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-17.899999618530273, 0.7974473237991333, -27.161420822143555) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bubble Gum",
+		[3] = CFrame.new(-17.899999618530273, 0.7974473237991333, -27.042133331298828) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-22.5, 0.7974473237991333, -27.399999618530273) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-22, 0.7974473237991333, -27.5) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-21.5, 0.7974473237991333, -27.5) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-21, 0.7974473237991333, -27.5) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-20.5, 0.7974473237991333, -27.5) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-20.5, 0.7974473237991333, -27.5) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-20, 0.7974473237991333, -27.5) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-19.5, 0.7974473237991333, -27.5) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Cookies",
+		[3] = CFrame.new(-19, 0.7974473237991333, -27.5) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-24.299999237060547, 0.7974473237991333, -27.105010986328125) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-24.299999237060547, 0.7974473237991333, -27.436674118041992) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-24.299999237060547, 0.7974473237991333, -27.76833724975586) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-24.299999237060547, 0.7974473237991333, -28.100000381469727) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-23.200000762939453, 0.7974473237991333, -26.399999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-23.200000762939453, 0.7974473237991333, -26.805009841918945) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-23.200000762939453, 0.7974473237991333, -27.136672973632812) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-23.200000762939453, 0.7974473237991333, -27.46833610534668) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-23.200000762939453, 0.7974473237991333, -27.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Candy Bar",
+		[3] = CFrame.new(-23.200000762939453, 0.7974473237991333, -28.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-26.899999618530273, 2.9974470138549805, -27.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-26.899999618530273, 2.9974470138549805, -26.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-25.899999618530273, 2.9974470138549805, -27.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-25.899999618530273, 2.9974470138549805, -26.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-24.899999618530273, 2.9974470138549805, -27.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-24.899999618530273, 2.9974470138549805, -26.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-23.899999618530273, 2.9974470138549805, -27.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-23.899999618530273, 2.9974470138549805, -26.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-22.899999618530273, 2.9974470138549805, -27.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Bread Bun",
+		[3] = CFrame.new(-22.899999618530273, 2.9974470138549805, -26.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-26.799999237060547, 5.197447776794434, -27.299999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-25.700000762939453, 5.197447776794434, -27.299999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-24.600000381469727, 5.197447776794434, -27.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-23.5, 5.197447776794434, -27.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-22.399999618530273, 5.197447776794434, -27.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-21.299999237060547, 5.197447776794434, -27.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-20.200000762939453, 5.197447776794434, -27.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-19.100000381469727, 5.197447776794434, -27.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Whole Bread",
+		[3] = CFrame.new(-18.023555755615234, 5.186768531799316, -27.102304458618164) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-25.299999237060547, 0.7974473237991333, -27.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-25.299999237060547, 0.7974473237991333, -26.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-26.299999237060547, 0.7974473237991333, -27.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-26.299999237060547, 0.7974473237991333, -26.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-18.200000762939453, 2.9974470138549805, -27.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-18.100000381469727, 2.9974470138549805, -26.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-19.200000762939453, 2.9974470138549805, -27.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-19.200000762939453, 2.9974470138549805, -26.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Noodles",
+		[3] = CFrame.new(-20.200000762939453, 2.9974470138549805, -27.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-29.5, 0.7974473237991333, -25.399999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-28.899999618530273, 0.7974473237991333, -25.399999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-28.299999237060547, 0.7974473237991333, -25.399999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-29.5, 0.7974473237991333, -24.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-28.899999618530273, 0.7974473237991333, -24.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-28.299999237060547, 0.7974473237991333, -24.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-29.5, 0.7974473237991333, -24.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-28.899999618530273, 0.7974473237991333, -24.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-28.299999237060547, 0.7974473237991333, -24.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Lubricant",
+		[3] = CFrame.new(-29.5, 0.7974473237991333, -23.600000381469727) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-29.600000381469727, 0.7974473237991333, -22.600000381469727) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-29.200000762939453, 0.7974473237991333, -22.600000381469727) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-28.799999237060547, 0.7974473237991333, -22.600000381469727) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-28.299999237060547, 0.7974473237991333, -22.600000381469727) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-27.899999618530273, 0.7974473237991333, -22.600000381469727) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-29.600000381469727, 0.7974473237991333, -21.100000381469727) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-29.200000762939453, 0.7974473237991333, -21.100000381469727) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-28.799999237060547, 0.7974473237991333, -21.100000381469727) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-28.399999618530273, 0.7974473237991333, -21.100000381469727) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Washing Powder",
+		[3] = CFrame.new(-28, 0.7974473237991333, -21.100000381469727) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "All Around Cleaner",
+		[3] = CFrame.new(-29.700000762939453, 0.7974473237991333, -19.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "All Around Cleaner",
+		[3] = CFrame.new(-29.399999618530273, 0.7974473237991333, -19.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "All Around Cleaner",
+		[3] = CFrame.new(-29.100000381469727, 0.7974473237991333, -19.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "All Around Cleaner",
+		[3] = CFrame.new(-28.799999237060547, 0.7974473237991333, -19.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "All Around Cleaner",
+		[3] = CFrame.new(-28.5, 0.7974473237991333, -19.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "All Around Cleaner",
+		[3] = CFrame.new(-28.100000381469727, 0.7974473237991333, -19.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "All Around Cleaner",
+		[3] = CFrame.new(-27.799999237060547, 0.7974473237991333, -19.799999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "All Around Cleaner",
+		[3] = CFrame.new(-29.5, 0.7974473237991333, -18.700000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "All Around Cleaner",
+		[3] = CFrame.new(-29.200000762939453, 0.7974473237991333, -18.700000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "All Around Cleaner",
+		[3] = CFrame.new(-28.899999618530273, 0.7974473237991333, -18.700000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-28.5, 0.7974473237991333, -18.700000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-27.899999618530273, 0.7974473237991333, -18.700000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-29.5, 0.7974473237991333, -17.399999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-28.899999618530273, 0.7974473237991333, -17.399999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-28.299999237060547, 0.7974473237991333, -17.399999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-29.5, 0.7974473237991333, -16.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-28.899999618530273, 0.7974473237991333, -16.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-28.299999237060547, 0.7974473237991333, -16.200000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-29.5, 0.7974473237991333, -15) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Brake Fluid",
+		[3] = CFrame.new(-28.799999237060547, 0.7974473237991333, -15) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-29.399999618530273, 0.7974473237991333, -13.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-28.799999237060547, 0.7974473237991333, -13.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-28.299999237060547, 0.7974473237991333, -13.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-27.799999237060547, 0.7974473237991333, -13.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-29.600000381469727, 2.9974470138549805, -24.700000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-29.100000381469727, 2.9974470138549805, -24.700000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-28.600000381469727, 2.9974470138549805, -24.700000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-28.899999618530273, 2.9974470138549805, -23.5) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-28.700000762939453, 2.9974470138549805, -23) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Windscreen Washer Fluid",
+		[3] = CFrame.new(-28.700000762939453, 2.9974470138549805, -22.5) * CFrame.Angles(0, 1.5707963705062866, 0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-29.5, 2.9974472522735596, -21.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-28.899999618530273, 2.9974472522735596, -21.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-28.299999237060547, 2.9974472522735596, -21.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-29.5, 2.9974472522735596, -19.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-28.899999618530273, 2.9974472522735596, -19.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-28.299999237060547, 2.9974472522735596, -19.899999618530273) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-29.5, 2.9974472522735596, -18.299999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-28.899999618530273, 2.9974472522735596, -18.299999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-28.299999237060547, 2.9974472522735596, -18.299999237060547) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Motor Oil",
+		[3] = CFrame.new(-29.5, 2.9974472522735596, -16.700000762939453) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+	wait(2)
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Water",
+		[3] = CFrame.new(-28.447999954223633, 0.532341718673706, -2.687999963760376) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Water",
+		[3] = CFrame.new(-27.775999069213867, 0.532341718673706, -2.687999963760376) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Water",
+		[3] = CFrame.new(-29.119998931884766, 0.532341718673706, -3.247999906539917) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Water",
+		[3] = CFrame.new(-29.119998931884766, 0.532341718673706, -3.247999906539917) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Canned Soda",
+		[3] = CFrame.new(-28.600000381469727, 2.5323410034179688, -2.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Canned Soda",
+		[3] = CFrame.new(-28, 2.5323410034179688, -2.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Canned Soda",
+		[3] = CFrame.new(-29.100000381469727, 2.5323410034179688, -3) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Canned Soda",
+		[3] = CFrame.new(-28.5, 2.5323410034179688, -3) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Soda",
+		[3] = CFrame.new(-29.119998931884766, 2.5323410034179688, -1.903999924659729) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Soda",
+		[3] = CFrame.new(-28.559999465942383, 2.5323410034179688, -1.903999924659729) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Soda",
+		[3] = CFrame.new(-28, 2.5323410034179688, -1.903999924659729) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Generic Soda",
+		[3] = CFrame.new(-29.119998931884766, 2.5323410034179688, -2.4639999866485596) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Milk",
+		[3] = CFrame.new(-29.040000915527344, 0.532341718673706, -1.9800000190734863) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Milk",
+		[3] = CFrame.new(-28.380001068115234, 0.532341718673706, -1.9800000190734863) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Milk",
+		[3] = CFrame.new(-27.720001220703125, 0.532341718673706, -1.9800000190734863) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Milk",
+		[3] = CFrame.new(-29.040000915527344, 0.532341718673706, -2.640000104904175) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cheese",
+		[3] = CFrame.new(-29.040000915527344, 4.63234281539917, -2.111999988555908) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cheese",
+		[3] = CFrame.new(-28.380001068115234, 4.63234281539917, -2.111999988555908) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cheese",
+		[3] = CFrame.new(-29.040000915527344, 4.63234281539917, -2.9040000438690186) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Cheese",
+		[3] = CFrame.new(-28.380001068115234, 4.63234281539917, -2.9040000438690186) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+	wait(2)
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Frozen Sausages",
+    [3] = CFrame.new(-17.899999618530273, 1.6000014543533325, 3.4000000953674316) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Frozen Sausages",
+    [3] = CFrame.new(-17.899999618530273, 1.6000014543533325, 2.700000047683716) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Homemade Fishfingers",
+    [3] = CFrame.new(-17.100000381469727, 1.6000014543533325, 3) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Ice Cream",
+    [3] = CFrame.new(-16.5, 1.600001573562622, 3.0999999046325684) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Frozen Veggies",
+    [3] = CFrame.new(-15.100000381469727, 1.600001573562622, 3.299999952316284) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Frozen Veggies",
+    [3] = CFrame.new(-15.100000381469727, 1.600001573562622, 2.5) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Ice Cream",
+    [3] = CFrame.new(-16.200000762939453, 1.600001573562622, 3.0999999046325684) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Homemade Fishfingers",
+    [3] = CFrame.new(-17.100000381469727, 1.8417786359786987, 3) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = "PlaceProduct",
+    [2] = "Homemade Fishfingers",
+    [3] = CFrame.new(-17.100000381469727, 2.08355712890625, 3) * CFrame.Angles(-0, 0, -0),
+    [4] = true
+}
+
+game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Meal",
+		[3] = CFrame.new(-13.199999809265137, 3.5000014305114746, -27.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Instant Meal",
+		[3] = CFrame.new(-11.399999618530273, 3.5000014305114746, -27.5) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hamburger",
+		[3] = CFrame.new(-11.826000213623047, 1.9000043869018555, -27.86400032043457) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hamburger",
+		[3] = CFrame.new(-11.826000213623047, 1.9000043869018555, -27.053998947143555) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hamburger",
+		[3] = CFrame.new(-11.015999794006348, 1.9000043869018555, -27.70199966430664) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hamburger",
+		[3] = CFrame.new(-11.015999794006348, 1.9000043869018555, -26.892000198364258) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hotdog",
+		[3] = CFrame.new(-13.549687385559082, 1.9000043869018555, -28.42152416700925) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hotdog",
+		[3] = CFrame.new(-13.549687385559082, 1.9000043869018555, -27.402727127075195) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+	local args = {
+		[1] = "PlaceProduct",
+		[2] = "Hotdog",
+		[3] = CFrame.new(-13.549687385559082, 1.9000043869018555, -26.897140502929688) * CFrame.Angles(-0, 0, -0),
+		[4] = true
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+InstantMeal.Name = "InstantMeal"
+InstantMeal.Parent = MainGUI
+InstantMeal.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+InstantMeal.BorderColor3 = Color3.fromRGB(255, 255, 255)
+InstantMeal.Position = UDim2.new(0.591000021, 0, 0.606000006, 0)
+InstantMeal.Size = UDim2.new(0, 50, 0, 50)
+InstantMeal.Font = Enum.Font.Cartoon
+InstantMeal.Text = "buy instant meal"
+InstantMeal.TextColor3 = Color3.fromRGB(255, 255, 255)
+InstantMeal.TextScaled = true
+InstantMeal.TextSize = 14.000
+InstantMeal.TextWrapped = true
+InstantMeal.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Generic Foods",
+		[3] = "Food",
+		[4] = "Instant Meal",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+AllAroundCleaner.Name = "AllAroundCleaner"
+AllAroundCleaner.Parent = MainGUI
+AllAroundCleaner.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+AllAroundCleaner.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AllAroundCleaner.Position = UDim2.new(0.31099999, 0, 0.792999983, 0)
+AllAroundCleaner.Size = UDim2.new(0, 50, 0, 50)
+AllAroundCleaner.Font = Enum.Font.Cartoon
+AllAroundCleaner.Text = "buy all around cleaner"
+AllAroundCleaner.TextColor3 = Color3.fromRGB(255, 255, 255)
+AllAroundCleaner.TextScaled = true
+AllAroundCleaner.TextSize = 14.000
+AllAroundCleaner.TextWrapped = true
+AllAroundCleaner.MouseButton1Click:Connect(function()
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Survival Supplies",
+		[3] = "Household",
+		[4] = "All Around Cleaner",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+end)
+
+WindscreenWasherFluid.Name = "WindscreenWasherFluid"
+WindscreenWasherFluid.Parent = MainGUI
+WindscreenWasherFluid.BackgroundColor3 = Color3.fromRGB(107, 59, 254)
+WindscreenWasherFluid.BorderColor3 = Color3.fromRGB(255, 255, 255)
+WindscreenWasherFluid.Position = UDim2.new(0.85799998, 0, 0.871309161, 0)
+WindscreenWasherFluid.Size = UDim2.new(0, 50, 0, 25)
+WindscreenWasherFluid.Font = Enum.Font.Cartoon
+WindscreenWasherFluid.Text = "buy windscreen"
+WindscreenWasherFluid.TextColor3 = Color3.fromRGB(255, 255, 255)
+WindscreenWasherFluid.TextScaled = true
+WindscreenWasherFluid.TextSize = 14.000
+WindscreenWasherFluid.TextWrapped = true
+WindscreenWasherFluid.MouseButton1Click:Connect(function()
+
+	local args = {
+		[1] = "BuyItem",
+		[2] = "Survival Supplies",
+		[3] = "Vehicle / Machinery",
+		[4] = "Windscreen Washer Fluid",
+		[5] = "Station"
+	}
+
+	game:GetService("ReplicatedStorage").Remote:FireServer(unpack(args))
+
+end)
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.Active = true
+Open.BackgroundColor3 = Color3.fromRGB(14, 21, 88)
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.Position = UDim2.new(0, 0, 0.611921847, 0)
+Open.Size = UDim2.new(0, 70, 0, 45)
+
+OpenMain.Name = "OpenMain"
+OpenMain.Parent = Open
+OpenMain.BackgroundColor3 = Color3.fromRGB(26, 40, 168)
+OpenMain.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenMain.Position = UDim2.new(0.134058058, 0, 0.22047627, 0)
+OpenMain.Size = UDim2.new(0, 50, 0, 25)
+OpenMain.Font = Enum.Font.Cartoon
+OpenMain.Text = "open main GUI"
+OpenMain.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenMain.TextScaled = true
+OpenMain.TextSize = 14.000
+OpenMain.TextWrapped = true
+OpenMain.MouseButton1Down:connect(function()
+	MainGUI.Visible = true
+end)
